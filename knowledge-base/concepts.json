@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "confirmation-bias",
+      "name": "确认偏误",
+      "name_en": "Confirmation Bias",
+      "core_idea": "人倾向于只找支持自己观点的证据，忽略反对意见",
+      "scenarios": ["分析", "策略", "学习", "写作"],
+      "keywords": ["只看到自己想看的", "信息茧房", "选择性相信", "为什么听不进反对意见", "偏见", "先入为主", "过滤信息", "一面倒"],
+      "prompt_template": "关于{topic}，请扮演一个'魔鬼代言人'，主动找出我观点中可能存在的确认偏误，列出至少3个我可能忽略的反面证据或视角。",
+      "popularity": "high",
+      "related": ["survivor-bias", "hanlon-razor", "map-territory"]
+    },
+    {
+      "id": "survivor-bias",
+      "name": "幸存者偏差",
+      "name_en": "Survivorship Bias",
+      "core_idea": "只看到成功者的经验，忽略了沉默的失败者",
+      "scenarios": ["分析", "策略", "学习", "写作"],
+      "keywords": ["为什么成功学不靠谱", "别人成功了我照做却不行", "只看赢家", "成功案例", "失败的人去哪了", "为什么照搬别人的方法没用", "幸存者"],
+      "prompt_template": "关于{topic}的成功案例，请帮我分析：那些尝试了同样方法但失败了的人，可能是什么原因？列出至少3个失败者不会告诉你的关键因素。",
+      "popularity": "high",
+      "related": ["confirmation-bias", "second-order", "ab-testing"]
+    },
+    {
+      "id": "dunning-kruger",
+      "name": "邓宁-克鲁格效应",
+      "name_en": "Dunning-Kruger Effect",
+      "core_idea": "越不懂的人越觉得自己懂，真懂了反而更谦虚",
+      "scenarios": ["学习", "分析", "沟通", "策略"],
+      "keywords": ["为什么越菜越自信", "半桶水响叮当", "达克效应", "无知者无畏", "刚学一点就觉得自己会了", "不知天高地厚", "蜜月期"],
+      "prompt_template": "关于{topic}，我目前处于{level}水平。请帮我评估：我在这个领域可能存在哪些'不知道自己不知道'的盲区？给我一份从自信到真正精通的成长路线图。",
+      "popularity": "high",
+      "related": ["curse-of-knowledge", "teach-back", "mental-model"]
+    },
+    {
+      "id": "rubber-duck",
+      "name": "橡皮鸭调试",
+      "name_en": "Rubber Duck Debugging",
+      "core_idea": "把问题从头到尾讲给一个完全不懂的人听，自己就能发现答案",
+      "scenarios": ["编程", "分析", "学习", "沟通"],
+      "keywords": ["代码找不出bug", "讲着讲着就明白了", "解释给别人听就懂了", "卡住了怎么办", "越说越清晰", "自言自语解决问题"],
+      "prompt_template": "我现在是只橡皮鸭，完全不懂技术。请你把{topic}这个代码问题/逻辑问题从头解释给我听，每一步都说清楚你在做什么、为什么这么做。解释过程中你可能会自己发现问题。",
+      "popularity": "high",
+      "related": ["teach-back", "curse-of-knowledge", "mental-model"]
+    },
+    {
+      "id": "tech-debt",
+      "name": "技术债务",
+      "name_en": "Technical Debt",
+      "core_idea": "快速做出来的东西，未来需要花更多时间来修补",
+      "scenarios": ["编程", "策略", "分析"],
+      "keywords": ["代码越改越乱", "临时方案用太久了", "欠的技术债", "重构", "到处打补丁", "越往后改越难", "历史遗留问题"],
+      "prompt_template": "关于{topic}这个项目/代码，请帮我盘点：目前积累了哪些技术债务？按严重程度排序，并给出每个债务的偿还成本估算（继续拖 vs 现在修的代价对比）。",
+      "popularity": "high",
+      "related": ["broken-windows", "minimum-viable", "compounding"]
+    },
+    {
+      "id": "broken-windows",
+      "name": "破窗效应",
+      "name_en": "Broken Windows Theory",
+      "core_idea": "小问题放任不管，会传递'没人管'的信号，引发更大问题",
+      "scenarios": ["编程", "策略", "沟通", "写作"],
+      "keywords": ["小问题不修会变大问题", "破罐子破摔", "一个烂代码带烂整个项目", "环境脏了大家都不爱护", "标准一降再降", "积少成多"],
+      "prompt_template": "关于{topic}，请帮我用'破窗效应'的视角检查：有哪些看似微不足道的小问题，如果不及时处理，可能会导致整体质量崩塌？列出前5个最容易忽视的'破窗'。",
+      "popularity": "medium",
+      "related": ["tech-debt", "parkinsons-law", "compounding"]
+    },
+    {
+      "id": "pomodoro",
+      "name": "番茄工作法",
+      "name_en": "Pomodoro Technique",
+      "core_idea": "25分钟全神贯注+5分钟彻底休息，用短跑节奏代替马拉松",
+      "scenarios": ["学习", "策略", "编程", "写作"],
+      "keywords": ["专注不了", "总走神", "时间管理", "拖延症", "效率低", "坐不住", "注意力不集中", "学一会儿就想摸手机"],
+      "prompt_template": "我要用番茄工作法来推进{topic}。请帮我：1）把这个任务拆解成25分钟能完成的小块；2）标注每块的优先级；3）建议每完成几个番茄后安排什么样的休息活动来保持状态。",
+      "popularity": "high",
+      "related": ["parkinsons-law", "goldilocks-rule", "rubber-band"]
+    },
+    {
+      "id": "hook-body-cta",
+      "name": "钩子-主体-号召",
+      "name_en": "Hook-Body-CTA Structure",
+      "core_idea": "先抓住注意力，再传递价值，最后推动行动",
+      "scenarios": ["写作", "沟通", "创意", "策略"],
+      "keywords": ["开头怎么写", "没人看完我的文章", "怎么吸引读者", "文案结构", "怎么让人点进来", "文章没人看", "结尾怎么写才有力"],
+      "prompt_template": "关于{topic}，请用'钩子-主体-号召（CTA）'的结构帮我写一段内容。钩子部分用一个反常识/制造悬念的开头；主体部分提供3个有价值的信息点；CTA部分给出一个明确的行动指引。",
+      "popularity": "high",
+      "related": ["minimum-viable", "goldilocks-rule", "curse-of-knowledge"]
+    },
+    {
+      "id": "mental-model",
+      "name": "心智模型",
+      "name_en": "Mental Model",
+      "core_idea": "把复杂事物压缩成一个简单好用的思维框架",
+      "scenarios": ["学习", "分析", "策略", "创意"],
+      "keywords": ["怎么快速理解一个新领域", "思维框架", "底层逻辑", "万能钥匙", "看问题的方式", "一个模型解释一切", "理解本质"],
+      "prompt_template": "关于{topic}，请帮我建立一个简洁的心智模型：用1个核心比喻或类比来概括它的本质，然后用不超过5条规则来描述它的运作方式。要求：外行听完也能立刻理解。",
+      "popularity": "high",
+      "related": ["map-territory", "inversion", "teach-back"]
+    },
+    {
+      "id": "compounding",
+      "name": "复利效应",
+      "name_en": "Compounding Effect",
+      "core_idea": "微小的持续积累会产生指数级的巨大变化",
+      "scenarios": ["策略", "学习", "写作", "分析"],
+      "keywords": ["每天进步一点点", "坚持的力量", "量变到质变", "长期主义", "滚雪球", "积少成多", "为什么要坚持"],
+      "prompt_template": "关于{topic}，请帮我设计一个'复利计划'：每天只需要投入{time}分钟，6个月后能达到什么水平？给出具体的每日行动清单，以及第1周、第1月、第3月、第6月的阶段性预期成果。",
+      "popularity": "high",
+      "related": ["pomodoro", "broken-windows", "parkinsons-law"]
+    },
+    {
+      "id": "minimum-viable",
+      "name": "最小可行产品（MVP）",
+      "name_en": "Minimum Viable Product",
+      "core_idea": "用最低成本做出能验证核心假设的版本，先试再改",
+      "scenarios": ["策略", "编程", "创意", "写作"],
+      "keywords": ["想太多了先做", "怎么低成本试错", "先上线再迭代", "最小化验证", "完美主义拖延", "别憋大招", "快速验证想法"],
+      "prompt_template": "关于{topic}这个想法/项目，请帮我设计一个MVP：1）核心假设是什么？2）验证这个假设最少需要什么功能/内容？3）用{budget}的资源/时间，如何在一周内完成第一个可测试版本？",
+      "popularity": "high",
+      "related": ["sandbox", "ab-testing", "tech-debt"]
+    },
+    {
+      "id": "sandbox",
+      "name": "沙盒思维",
+      "name_en": "Sandbox Thinking",
+      "core_idea": "在安全隔离的环境中大胆实验，失败了也不会影响真实世界",
+      "scenarios": ["编程", "创意", "学习", "策略"],
+      "keywords": ["怕搞坏不敢试", "先试试看", "实验环境", "安全试错", "随便折腾", "练手", "测试一下再说", "弄坏了也没关系"],
+      "prompt_template": "关于{topic}，请帮我搭建一个'沙盒环境'：设计一个安全的实验方案，让我可以大胆尝试{action}而不担心产生任何实际损失或负面影响。给出具体的实验步骤和回滚方案。",
+      "popularity": "medium",
+      "related": ["minimum-viable", "ab-testing", "parallel-universe"]
+    },
+    {
+      "id": "curse-of-knowledge",
+      "name": "知识诅咒",
+      "name_en": "Curse of Knowledge",
+      "core_idea": "一旦你知道了某件事，就很难想象不知道它是什么感觉",
+      "scenarios": ["写作", "沟通", "学习", "编程"],
+      "keywords": ["专家说人话", "为什么解释不清", "觉得简单别人怎么不懂", "术语太多", "讲不清楚", "我以为你知道", "内行看门道外行看热闹"],
+      "prompt_template": "关于{topic}，我需要向{audience}解释这个概念。请先检查我的表达中是否存在'知识诅咒'——哪些地方我默认了对方已经知道但实际并不清楚？然后帮我用小学六年级能懂的语言重新组织。",
+      "popularity": "high",
+      "related": ["dunning-kruger", "teach-back", "rubber-duck", "hook-body-cta"]
+    },
+    {
+      "id": "hanlon-razor",
+      "name": "汉隆剃刀",
+      "name_en": "Hanlon's Razor",
+      "core_idea": "能用愚蠢或疏忽解释的事，不要归咎于恶意",
+      "scenarios": ["沟通", "分析", "策略"],
+      "keywords": ["他是故意的吗", "别人针对我", "阴谋论", "恶意揣测", "别把人想太坏", "是不是误会", "针对", "想多了"],
+      "prompt_template": "关于{topic}这件事，请用汉隆剃刀帮我分析：对方的行为更可能出于什么原因（愚蠢、疏忽、信息不对称、能力不足）？请列出至少3种非恶意的解释，并评估每种的可能性。",
+      "popularity": "medium",
+      "related": ["confirmation-bias", "second-order", "map-territory"]
+    },
+    {
+      "id": "parkinsons-law",
+      "name": "帕金森定律",
+      "name_en": "Parkinson's Law",
+      "core_idea": "工作会自动膨胀，占满分配给它的所有时间",
+      "scenarios": ["策略", "学习", "写作", "编程"],
+      "keywords": ["给多少时间就用多少", "deadline才是生产力", "为什么总是拖到最后一刻", "时间越多效率越低", "磨洋工", "不到截止不干活"],
+      "prompt_template": "关于{topic}，我之前给它预留了{time}的时间但总是完不成。请用帕金森定律帮我：1）把任务拆成有明确截止时间的子任务；2）为每个子任务设定比预估短20%的时间上限；3）设计一个防拖延的检查点机制。",
+      "popularity": "medium",
+      "related": ["pomodoro", "goldilocks-rule", "minimum-viable"]
+    },
+    {
+      "id": "law-of-triviality",
+      "name": "自行车棚效应",
+      "name_en": "Law of Triviality (Bikeshedding)",
+      "core_idea": "越简单的事越容易引发过度讨论，复杂的事反而没人敢发言",
+      "scenarios": ["策略", "沟通", "分析"],
+      "keywords": ["开会吵半天都是小事", "大事没人说小事吵半天", "为颜色吵一小时", "讨论跑偏", "抓小放大", "纠结细节忘了重点", "本末倒置"],
+      "prompt_template": "关于{topic}这个讨论/决策，请帮我检查是否存在自行车棚效应：1）我们在哪些不重要的事情上花了过多时间？2）有哪些重要但被跳过的议题？3）给我一个'议题优先级矩阵'，把精力重新分配到关键决策上。",
+      "popularity": "medium",
+      "related": ["parkinsons-law", "confirmation-bias", "goldilocks-rule"]
+    },
+    {
+      "id": "goldilocks-rule",
+      "name": "金发姑娘原则",
+      "name_en": "Goldilocks Rule",
+      "core_idea": "不太多也不太少，恰到好处的中间值效果最好",
+      "scenarios": ["策略", "写作", "沟通", "创意"],
+      "keywords": ["过犹不及", "恰到好处", "太多太少都不好", "找个平衡", "度在哪里", "分寸感", "怎么把握尺度"],
+      "prompt_template": "关于{topic}，请用金发姑娘原则帮我找到'刚刚好'的平衡点：1）做过头的后果是什么？2）做得不够的后果是什么？3）'刚刚好'的标准是什么？给出具体的判断指标。",
+      "popularity": "medium",
+      "related": ["rubber-band", "minimum-viable", "law-of-triviality"]
+    },
+    {
+      "id": "inversion",
+      "name": "逆向思维",
+      "name_en": "Inversion Thinking",
+      "core_idea": "不问怎么成功，先问怎么避免失败，反过来想问题",
+      "scenarios": ["策略", "创意", "分析", "编程"],
+      "keywords": ["反过来想", "倒推", "不要做什么", "避免失败", "反向思考", "怎么搞砸这件事", "避免踩坑", "排除法"],
+      "prompt_template": "关于{topic}，请用逆向思维：先别告诉我怎么做好，而是列出'如果要让这件事彻底搞砸，需要做哪些事'，然后我把这些全部反过来，就是成功路径。请列出至少5个搞砸的方法。",
+      "popularity": "high",
+      "related": ["second-order", "mental-model", "hanlon-razor"]
+    },
+    {
+      "id": "second-order",
+      "name": "二阶效应",
+      "name_en": "Second-Order Thinking",
+      "core_idea": "做决定时不仅要看直接后果，还要想后果的后果",
+      "scenarios": ["策略", "分析", "编程", "创意"],
+      "keywords": ["没想到还有这一层", "解决一个问题引发新问题", "连锁反应", "后果的后果", "副作用", "按下葫芦浮起瓢", "蝴蝶效应"],
+      "prompt_template": "关于{topic}这个决定/方案，请做二阶效应分析：1）直接后果是什么？2）直接后果会引发什么新的变化？3）那些变化又会带来什么影响？至少追踪到第三层，帮我找到隐藏的风险和机会。",
+      "popularity": "high",
+      "related": ["inversion", "survivor-bias", "map-territory"]
+    },
+    {
+      "id": "map-territory",
+      "name": "地图非疆域",
+      "name_en": "Map is Not the Territory",
+      "core_idea": "模型和理论是对现实的简化，不要把模型当成现实本身",
+      "scenarios": ["分析", "策略", "学习", "编程"],
+      "keywords": ["理论有用但现实更复杂", "纸上谈兵", "书本和现实不一样", "模型不等于现实", "理论派不接地气", "不要迷信框架", "理论和实际的差距"],
+      "prompt_template": "关于{topic}这个理论/模型/框架，请帮我分析：1）它假设了什么前提条件？2）在哪些现实场景中这些前提会失效？3）给我3个'理论说应该A但实际是B'的真实案例。帮我区分模型的有效边界。",
+      "popularity": "medium",
+      "related": ["mental-model", "confirmation-bias", "second-order"]
+    },
+    {
+      "id": "ab-testing",
+      "name": "A/B 测试思维",
+      "name_en": "A/B Testing Mindset",
+      "core_idea": "与其争论哪个更好，不如让实际数据来说话",
+      "scenarios": ["策略", "编程", "创意", "写作"],
+      "keywords": ["哪个更好试一下", "别猜了测一下", "数据说话", "两版对比", "用实验验证", "拿不准就测", "不要凭感觉"],
+      "prompt_template": "关于{topic}，我有两种方案拿不定主意：方案A是{option_a}，方案B是{option_b}。请帮我设计一个最小化的A/B测试：1）关键指标是什么？2）需要多少样本量？3）测试周期多长？4）如何确保结果可信？",
+      "popularity": "high",
+      "related": ["minimum-viable", "sandbox", "survivor-bias"]
+    },
+    {
+      "id": "jobs-framework",
+      "name": "用户故事思维",
+      "name_en": "Jobs to Be Done / User Story",
+      "core_idea": "站在使用者角度思考：作为谁，我需要什么，以便达到什么目的",
+      "scenarios": ["策略", "编程", "写作", "沟通"],
+      "keywords": ["用户到底想要什么", "站在用户角度", "需求不明确", "谁在什么场景下需要什么", "写给谁看的", "解决什么痛点", "用户视角"],
+      "prompt_template": "关于{topic}，请用用户故事框架帮我梳理需求：'作为{角色}，我希望{功能/内容}，以便{目的}'。请至少写出5条不同角色的用户故事，并标注哪些是核心需求、哪些是锦上添花。",
+      "popularity": "high",
+      "related": ["curse-of-knowledge", "minimum-viable", "hook-body-cta"]
+    },
+    {
+      "id": "rubber-band",
+      "name": "橡皮筋法则",
+      "name_en": "Rubber Band Rule",
+      "core_idea": "略微超出舒适区的挑战让人成长最快，太远会断，太近没弹力",
+      "scenarios": ["学习", "策略", "编程", "创意"],
+      "keywords": ["跳出舒适区", "稍微有点难", "太简单没进步", "太难容易放弃", "怎么设置难度", "最佳学习难度", "挑战多大合适"],
+      "prompt_template": "关于学习{topic}，我目前的水平是{level}。请用橡皮筋法则帮我设计学习路径：1）我当前的舒适区边界在哪？2）下一步应该挑战什么（比现在难15-20%）？3）给出3个刚好超出舒适区的练习任务。",
+      "popularity": "medium",
+      "related": ["goldilocks-rule", "pomodoro", "dunning-kruger"]
+    },
+    {
+      "id": "parallel-universe",
+      "name": "平行宇宙法",
+      "name_en": "Parallel Universe Method",
+      "core_idea": "假设某个条件完全翻转，从而激发全新的创意和视角",
+      "scenarios": ["创意", "策略", "写作", "分析"],
+      "keywords": ["如果反过来会怎样", "假如完全相反", "脑洞大开", "换个角度想", "颠覆常识", "假如颠倒过来", "反向假设"],
+      "prompt_template": "关于{topic}，请用平行宇宙法激发创意：假设{assumption}完全相反（比如：如果用户是讨厌这个产品的、如果时间是倒流的、如果预算是无限的）。基于这个翻转的前提，重新思考方案，列出3-5个意想不到的创新方向。",
+      "popularity": "low",
+      "related": ["inversion", "sandbox", "mental-model"]
+    },
+    {
+      "id": "teach-back",
+      "name": "费曼教回法",
+      "name_en": "Feynman Technique / Teach-Back",
+      "core_idea": "如果你不能用简单的话教会别人，说明你自己还没真正懂",
+      "scenarios": ["学习", "沟通", "写作", "编程"],
+      "keywords": ["教别人才能真懂", "讲不清楚就是没懂", "用大白话解释", "费曼学习法", "怎么检验自己学没学会", "给别人讲一遍", "说人话"],
+      "prompt_template": "关于{topic}，请扮演一个完全不懂这个领域的{audience}（比如小学生、你的奶奶、非技术同事）。我会尝试向你解释这个概念，请你不断追问'为什么'和'那是什么意思'，直到发现我解释不清楚的地方——那就是我还没真正理解的部分。",
+      "popularity": "high",
+      "related": ["rubber-duck", "curse-of-knowledge", "dunning-kruger", "mental-model"]
+    }
+  ]
+}

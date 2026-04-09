@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "taleb",
+      "name": "塔勒布",
+      "name_en": "Nassim Nicholas Taleb",
+      "core_idea": "从不确定性中获益，拥抱波动与混乱",
+      "scenarios": ["策略", "分析"],
+      "keywords": ["塔勒布", "反脆弱", "黑天鹅", "不确定性", "随机", "不对称", "风险", "杠铃策略", " Skin in the Game"],
+      "prompt_template": "以塔勒布的思维分析{topic}：哪些不确定性因素被低估了？如何构建反脆弱性？当前策略中有什么是脆弱的？",
+      "popularity": "high",
+      "related": ["kahneman", "munger", "thiel"]
+    },
+    {
+      "id": "munger",
+      "name": "查理·芒格",
+      "name_en": "Charlie Munger",
+      "core_idea": "多元思维模型跨学科解决问题",
+      "scenarios": ["策略", "分析", "学习"],
+      "keywords": ["芒格", "查理芒格", "多元思维", "思维模型", "逆向思考", "反过来想", "能力圈", "穷查理宝典", "普世智慧"],
+      "prompt_template": "用查理·芒格的多元思维模型分析{topic}：先反过来想，怎么一定会失败？从心理学、经济学、数学等角度分别能得出什么结论？",
+      "popularity": "high",
+      "related": ["taleb", "kahneman", "drucker"]
+    },
+    {
+      "id": "kahneman",
+      "name": "丹尼尔·卡尼曼",
+      "name_en": "Daniel Kahneman",
+      "core_idea": "揭示系统性认知偏误，改善决策质量",
+      "scenarios": ["分析", "策略", "学习"],
+      "keywords": ["卡尼曼", "快思慢想", "认知偏误", "系统1系统2", "锚定效应", "损失厌恶", "确认偏误", "可得性偏差", "前景理论"],
+      "prompt_template": "用卡尼曼的快思慢想框架分析{topic}：人们在做这个判断时，系统1可能产生哪些直觉偏误？如何启动系统2来纠正？",
+      "popularity": "high",
+      "related": ["munger", "taleb", "pinker"]
+    },
+    {
+      "id": "drucker",
+      "name": "彼得·德鲁克",
+      "name_en": "Peter Drucker",
+      "core_idea": "以目标为导向的管理与自我管理",
+      "scenarios": ["策略", "学习"],
+      "keywords": ["德鲁克", "管理学", "目标管理", "MBO", "知识工作者", "要事优先", "卓有成效", "自我管理", "反馈分析"],
+      "prompt_template": "以德鲁克的管理思想审视{topic}：目标是否清晰可衡量？谁是这个问题的知识工作者？如何做到要事优先？",
+      "popularity": "high",
+      "related": ["munger", "christensen", "jobs"]
+    },
+    {
+      "id": "christensen",
+      "name": "克莱顿·克里斯坦森",
+      "name_en": "Clayton Christensen",
+      "core_idea": "颠覆式创新从低端市场反噬现有巨头",
+      "scenarios": ["策略", "分析", "创意"],
+      "keywords": ["克里斯坦森", "颠覆式创新", "破坏性创新", "创新者窘境", " Jobs to be Done", "低端颠覆", "持续性创新", "价值网络"],
+      "prompt_template": "用克里斯坦森的颠覆式创新理论分析{topic}：是否存在低端被忽视的市场？现有玩家的价值网络如何阻碍了创新？Jobs to be Done 是什么？",
+      "popularity": "high",
+      "related": ["drucker", "thiel", "graham"]
+    },
+    {
+      "id": "jung",
+      "name": "荣格",
+      "name_en": "Carl Jung",
+      "core_idea": "集体潜意识与原型揭示深层心理模式",
+      "scenarios": ["创意", "写作", "分析"],
+      "keywords": ["荣格", "原型", "集体潜意识", "阴影", "人格面具", "阿尼玛", "内向 外向", "自性化", "曼陀罗"],
+      "prompt_template": "用荣格的原型理论分析{topic}：这里面激活了哪些集体潜意识中的原型？阴影部分是什么？如何实现更深层的自性化？",
+      "popularity": "medium",
+      "related": ["adler", "maslow", "murakami"]
+    },
+    {
+      "id": "adler",
+      "name": "阿德勒",
+      "name_en": "Alfred Adler",
+      "core_idea": "目的论取代原因论，人是自己选择的结果",
+      "scenarios": ["分析", "沟通", "学习"],
+      "keywords": ["阿德勒", "目的论", "被讨厌的勇气", "自卑与超越", "课题分离", "自卑感", "优越情结", "共同体感觉", "生活风格"],
+      "prompt_template": "用阿德勒的目的论视角分析{topic}：这不是过去造成的，而是为了什么目的？哪些是自己的课题，哪些是他人的课题？",
+      "popularity": "high",
+      "related": ["jung", "maslow", "carnegie"]
+    },
+    {
+      "id": "maslow",
+      "name": "马斯洛",
+      "name_en": "Abraham Maslow",
+      "core_idea": "需求从底层到高层逐级满足的层次模型",
+      "scenarios": ["分析", "策略", "沟通"],
+      "keywords": ["马斯洛", "需求层次", "自我实现", "金字塔", "生理需求", "安全需求", "归属感", "尊重需求", "高峰体验"],
+      "prompt_template": "用马斯洛需求层次理论分析{topic}：目标受众当前最迫切的需求在哪个层级？如何从低层需求出发设计满足路径？",
+      "popularity": "high",
+      "related": ["adler", "jung", "carnegie"]
+    },
+    {
+      "id": "murakami",
+      "name": "村上春树",
+      "name_en": "Haruki Murakami",
+      "core_idea": "用日常隐喻和疏离感构建文学氛围",
+      "scenarios": ["写作", "创意"],
+      "keywords": ["村上春树", "村上", "隐喻", "孤独感", "日常超现实", "疏离", "爵士乐", "跑步", "小确幸"],
+      "prompt_template": "以村上春树的叙事风格改写{topic}：用日常场景中微妙的疏离感来传达情绪，加入一个超现实的隐喻，节奏克制而有余韵。",
+      "popularity": "high",
+      "related": ["higashino", "jung", "gladwell"]
+    },
+    {
+      "id": "higashino",
+      "name": "东野圭吾",
+      "name_en": "Keigo Higashino",
+      "core_idea": "精密布局的推理叙事与情感反转",
+      "scenarios": ["写作", "创意", "分析"],
+      "keywords": ["东野圭吾", "推理", "悬念", "反转", "诡计", "人性", "白夜行", "嫌疑人X", "解忧杂货店"],
+      "prompt_template": "以东野圭吾的推理叙事手法处理{topic}：在开头埋下一个看似无关的伏笔，中段制造认知误导，结尾揭示一个既意外又在情理之中的真相。",
+      "popularity": "high",
+      "related": ["murakami", "sunzi", "aristotle"]
+    },
+    {
+      "id": "pinker",
+      "name": "史蒂芬·平克",
+      "name_en": "Steven Pinker",
+      "core_idea": "用认知科学原理提升写作的清晰度",
+      "scenarios": ["写作", "学习", "沟通"],
+      "keywords": ["平克", "风格感觉", "认知科学", "写作", "清晰表达", "思维语言", "语法", "知识诅咒", "句法树"],
+      "prompt_template": "用平克的认知科学写作原则优化{topic}：检查是否存在知识诅咒，用具体替代表达抽象概念，确保每句话的读者预期不被打破。",
+      "popularity": "medium",
+      "related": ["kahneman", "gladwell", "aristotle"]
+    },
+    {
+      "id": "brooks",
+      "name": "弗雷德·布鲁克斯",
+      "name_en": "Fred Brooks",
+      "core_idea": "软件工程中人力不可线性叠加",
+      "scenarios": ["编程", "策略", "分析"],
+      "keywords": ["布鲁克斯", "人月神话", "人月", "没有银弹", "软件工程", "项目管理", "向进度中加人", "概念完整性", "第二系统效应"],
+      "prompt_template": "用布鲁克斯的人月神话思维分析{topic}：是否存在试图用加人来加速的做法？概念完整性是否被破坏？什么才是真正的瓶颈？",
+      "popularity": "medium",
+      "related": ["raymond", "graham", "drucker"]
+    },
+    {
+      "id": "raymond",
+      "name": "埃里克·雷蒙德",
+      "name_en": "Eric Raymond",
+      "core_idea": "开源去中心化协作优于封闭开发",
+      "scenarios": ["编程", "策略", "创意"],
+      "keywords": ["雷蒙德", "开源", "大教堂与集市", "开源运动", " Linus 法则", "given enough eyeballs", "集市模式", "黑客", "自由软件"],
+      "prompt_template": "用雷蒙德的大教堂与集市思维分析{topic}：当前是封闭的大教堂模式还是开放的集市模式？如何让更多眼球发现问题？释放早、释放频繁的策略是否适用？",
+      "popularity": "medium",
+      "related": ["brooks", "graham", "thiel"]
+    },
+    {
+      "id": "sunzi",
+      "name": "孙子",
+      "name_en": "Sun Tzu",
+      "core_idea": "知己知彼，以最小代价取胜",
+      "scenarios": ["策略", "分析", "沟通"],
+      "keywords": ["孙子", "孙子兵法", "兵法", "知己知彼", "不战而屈人之兵", "虚实", "势", "以正合以奇胜", "庙算"],
+      "prompt_template": "用孙子兵法思维制定{topic}的策略：先做庙算评估胜负条件，找出对手的虚实，以正合以奇胜，如何做到不战而屈人之兵？",
+      "popularity": "high",
+      "related": ["thiel", "munger", "aristotle"]
+    },
+    {
+      "id": "feynman",
+      "name": "费曼",
+      "name_en": "Richard Feynman",
+      "core_idea": "真正的理解是能用最简单的语言解释清楚",
+      "scenarios": ["学习", "沟通", "分析"],
+      "keywords": ["费曼", "费曼学习法", "费曼技巧", "诺贝尔", "物理学", "讲清楚", "简单解释", "类比", "好奇心"],
+      "prompt_template": "用费曼学习法拆解{topic}：假设你要给一个 12 岁的孩子解释这个概念，你会怎么说？哪里卡壳了，就是你还不够理解的地方。",
+      "popularity": "high",
+      "related": ["pinker", "kahneman", "adler"]
+    },
+    {
+      "id": "jobs",
+      "name": "乔布斯",
+      "name_en": "Steve Jobs",
+      "core_idea": "极致简化和用户体验驱动产品设计",
+      "scenarios": ["创意", "策略", "沟通"],
+      "keywords": ["乔布斯", "极简", "苹果", "用户体验", "设计", "少即是多", "Stay Hungry", "产品", "现实扭曲力场"],
+      "prompt_template": "以乔布斯的产品哲学审视{topic}：如果只能保留一个核心功能，是哪个？每个多余的东西能不能砍掉？用户拿起来的第一感受是什么？",
+      "popularity": "high",
+      "related": ["drucker", "thiel", "graham"]
+    },
+    {
+      "id": "graham",
+      "name": "保罗·格雷厄姆",
+      "name_en": "Paul Graham",
+      "core_idea": "做人们需要的东西，用写作理清思考",
+      "scenarios": ["策略", "写作", "编程"],
+      "keywords": ["保罗格雷厄姆", "PG", " Y Combinator", "创业", "黑客与画家", " Make something people want", "写作", " Lisp", "独立思考"],
+      "prompt_template": "用保罗·格雷厄姆的创业哲学分析{topic}：这是不是人们真正需要的东西？如果不是，离人们最近的需求是什么？用写作的方式把这个想法重新理一遍。",
+      "popularity": "high",
+      "related": ["thiel", "christensen", "raymond"]
+    },
+    {
+      "id": "thiel",
+      "name": "彼得·蒂尔",
+      "name_en": "Peter Thiel",
+      "core_idea": "寻找从零到一的垄断式创新",
+      "scenarios": ["策略", "创意", "分析"],
+      "keywords": ["蒂尔", "彼得蒂尔", "从零到一", " Zero to One", "垄断", "逆向思考", "秘密", " PayPal 黑手党", "竞争是留给失败者的"],
+      "prompt_template": "用蒂尔的从零到一思维分析{topic}：什么是别人都不认同但你认为是真的秘密？在哪个维度上可以建立垄断？从 0 到 1 和从 1 到 N 的区别在哪？",
+      "popularity": "high",
+      "related": ["graham", "christensen", "munger"]
+    },
+    {
+      "id": "seneca",
+      "name": "塞涅卡",
+      "name_en": "Seneca",
+      "core_idea": "专注于可控之事，接受不可控之命运",
+      "scenarios": ["学习", "策略", "沟通"],
+      "keywords": ["塞涅卡", "斯多葛", "斯多葛主义", "控制二分法", "命运", "时间管理", "论生命之短暂", "理性", "virtue"],
+      "prompt_template": "用塞涅卡的斯多葛哲学审视{topic}：其中什么是你能控制的，什么是你不能控制的？把精力全部集中在前者，对后者保持平静。",
+      "popularity": "medium",
+      "related": ["taleb", "adler", "aristotle"]
+    },
+    {
+      "id": "aristotle",
+      "name": "亚里士多德",
+      "name_en": "Aristotle",
+      "core_idea": "用逻辑三段论和修辞说服他人",
+      "scenarios": ["沟通", "写作", "分析"],
+      "keywords": ["亚里士多德", "三段论", "修辞学", "逻辑", "ethos pathos logos", "说服", "中庸之道", "形式逻辑", "论证"],
+      "prompt_template": "用亚里士多德的修辞学框架构建{topic}的论证：分别用 logos（逻辑论证）、ethos（可信权威）、pathos（情感共鸣）三个支柱来支撑你的观点。",
+      "popularity": "medium",
+      "related": ["demosthenes", "sunzi", "pinker"]
+    },
+    {
+      "id": "demosthenes",
+      "name": "德摩斯梯尼",
+      "name_en": "Demosthenes",
+      "core_idea": "通过极致练习掌握演讲说服力",
+      "scenarios": ["沟通", "写作"],
+      "keywords": ["德摩斯梯尼", "演讲", "演说家", "口才", "说服力", "含石子练习", "辩论", "雄辩", "修辞"],
+      "prompt_template": "用德摩斯梯尼的演讲原则打磨{topic}的表达：开场如何在前 10 秒抓住注意力？核心论点是否有力？结尾是否有令人难忘的行动号召？",
+      "popularity": "low",
+      "related": ["aristotle", "carnegie", "pinker"]
+    },
+    {
+      "id": "carnegie",
+      "name": "戴尔·卡内基",
+      "name_en": "Dale Carnegie",
+      "core_idea": "真诚地关注他人需求赢得合作",
+      "scenarios": ["沟通", "策略"],
+      "keywords": ["卡内基", "人性的弱点", "人际关系", "沟通", "影响力", "真诚", "赞美", "倾听", " Win Friends"],
+      "prompt_template": "用卡内基的人际沟通原则分析{topic}：对方的需求和动机是什么？如何先让对方感到被理解和重要，再表达你的观点？",
+      "popularity": "high",
+      "related": ["adler", "maslow", "demosthenes"]
+    },
+    {
+      "id": "kawakami",
+      "name": "川上量生",
+      "name_en": "Kawakami Ryo",
+      "core_idea": "用限制条件激发创意突破",
+      "scenarios": ["创意", "策略"],
+      "keywords": ["川上量生", "创意思维", "限制", "头脑风暴", "创意方法论", "创新思维", "创意限制", "发散思维"],
+      "prompt_template": "用川上量生的创意思维方法处理{topic}：先加上一个严苛的限制条件（预算减半/时间缩短/只能用一种工具），在这个限制下反而能激发什么新的思路？",
+      "popularity": "low",
+      "related": ["jobs", "christensen", "murakami"]
+    },
+    {
+      "id": "mcluhan",
+      "name": "麦克卢汉",
+      "name_en": "Marshall McLuhan",
+      "core_idea": "媒介本身比内容更深刻地改变社会",
+      "scenarios": ["分析", "策略", "创意"],
+      "keywords": ["麦克卢汉", "媒介即信息", " The medium is the message", "媒介", "地球村", "热媒介 冷媒介", "传播学", "信息时代", "媒介决定论"],
+      "prompt_template": "用麦克卢汉的媒介理论分析{topic}：你选择的媒介形式本身传递了什么信息？如果换成另一种媒介，内容会如何被重塑？当前的媒介环境正在怎样改变人的感知？",
+      "popularity": "medium",
+      "related": ["gladwell", "pinker", "jobs"]
+    },
+    {
+      "id": "gladwell",
+      "name": "马尔科姆·格拉德威尔",
+      "name_en": "Malcolm Gladwell",
+      "core_idea": "用故事包装洞见让复杂观点流行",
+      "scenarios": ["写作", "分析", "沟通"],
+      "keywords": ["格拉德威尔", "引爆点", "异类", " Blink", "一万小时", " tipping point", "流行", "叙事", "故事化"],
+      "prompt_template": "用格拉德威尔的叙事方法处理{topic}：先讲一个出人意料的小故事，然后从中引出反直觉的洞见。找出其中的个别人物、附着力因素和环境威力。",
+      "popularity": "high",
+      "related": ["pinker", "mcluhan", "murakami"]
+    }
+  ]
+}

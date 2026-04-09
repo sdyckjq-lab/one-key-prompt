@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "porter-five-forces",
+      "name": "波特五力模型",
+      "name_en": "Porter's Five Forces",
+      "core_idea": "从五种竞争力量分析行业吸引力与盈利潜力",
+      "scenarios": ["策略", "分析"],
+      "keywords": ["竞争分析", "行业分析", "市场格局", "对手分析", "要不要进入这个市场", "这个行业赚不赚钱", "壁垒", "议价能力"],
+      "prompt_template": "用波特五力模型分析{industry}行业的竞争格局，分别评估：供应商议价能力、买方议价能力、新进入者威胁、替代品威胁、现有竞争者竞争程度，最后给出该行业的吸引力判断和进入建议。",
+      "popularity": "high",
+      "related": ["swot", "blue-ocean", "bcg-matrix", "ansoff-matrix"]
+    },
+    {
+      "id": "swot",
+      "name": "SWOT 分析",
+      "name_en": "SWOT Analysis",
+      "core_idea": "从优势劣势机会威胁四个维度全面评估现状",
+      "scenarios": ["策略", "分析", "学习"],
+      "keywords": ["优势劣势", "机会威胁", "现状分析", "自我评估", "全面分析", "我们有什么优势", "竞品对比", "做个盘点"],
+      "prompt_template": "对{topic}进行 SWOT 分析，分别列出：内部优势(S)、内部劣势(W)、外部机会(O)、外部威胁(T)，并基于交叉分析给出 SO/WO/ST/WT 四种策略建议。",
+      "popularity": "high",
+      "related": ["porter-five-forces", "bcg-matrix", "cost-benefit", "pareto"]
+    },
+    {
+      "id": "bcg-matrix",
+      "name": "BCG 矩阵",
+      "name_en": "BCG Growth-Share Matrix",
+      "core_idea": "按市场增长率和份额将业务分为四类决定资源分配",
+      "scenarios": ["策略", "分析"],
+      "keywords": ["业务组合", "资源分配", "明星业务", "现金牛", "该砍掉哪个产品", "产品线规划", "投资优先级", "哪些业务重点做"],
+      "prompt_template": "用 BCG 矩阵对{company_or_product}的业务/产品线进行分类，标注每个业务的市场增长率和相对市场份额，判断其属于明星、现金牛、问题还是瘦狗，并给出资源分配建议。",
+      "popularity": "high",
+      "related": ["ansoff-matrix", "porter-five-forces", "pareto", "cost-benefit"]
+    },
+    {
+      "id": "blue-ocean",
+      "name": "蓝海战略",
+      "name_en": "Blue Ocean Strategy",
+      "core_idea": "跳出竞争红海，通过价值创新开辟无竞争新市场",
+      "scenarios": ["策略", "创意", "分析"],
+      "keywords": ["差异化", "避开竞争", "创新市场", "蓝海", "红海", "怎么跟别人不一样", "新赛道", "找不到差异化"],
+      "prompt_template": "用蓝海战略的「剔除-减少-增加-创造」四步框架，为{product_or_service}设计差异化策略，画出战略布局图，说明如何跳出红海竞争、创造新的价值曲线。",
+      "popularity": "high",
+      "related": ["disruptive-innovation", "design-thinking", "jobs-to-be-done", "porter-five-forces"]
+    },
+    {
+      "id": "first-principles",
+      "name": "第一性原理",
+      "name_en": "First Principles Thinking",
+      "core_idea": "剥离假设和类比，回归事物最基本事实重新推导",
+      "scenarios": ["分析", "创意", "学习", "策略"],
+      "keywords": ["本质思考", "回归本质", "从零推导", "别类比", "底层逻辑", "最根本的原因", "到底为什么", "拆到最基本"],
+      "prompt_template": "用第一性原理分析{topic}：先列出这个领域的常见假设和类比推理，逐一质疑并剥离，然后从最基本的事实/物理规律/经济原理出发，重新推导出解决方案或结论。",
+      "popularity": "high",
+      "related": ["occams-razor", "system-dynamics", "fermi-estimation"]
+    },
+    {
+      "id": "occams-razor",
+      "name": "奥卡姆剃刀",
+      "name_en": "Occam's Razor",
+      "core_idea": "在能解释现象的假设中，选最简单的那个",
+      "scenarios": ["分析", "学习", "沟通"],
+      "keywords": ["最简单的解释", "别想复杂了", "过度解读", "简洁解释", "哪个原因更可能", "简化", "抓重点", "别加假设"],
+      "prompt_template": "针对{problem_or_phenomenon}，列出所有可能的解释/假设，然后用奥卡姆剃刀原则逐一筛除不必要的假设，留下最简洁且能充分解释的方案，并说明理由。",
+      "popularity": "high",
+      "related": ["first-principles", "pareto", "bayesian-thinking"]
+    },
+    {
+      "id": "fermi-estimation",
+      "name": "费米估算",
+      "name_en": "Fermi Estimation",
+      "core_idea": "将复杂问题拆解为可估算子问题快速得出近似值",
+      "scenarios": ["分析", "策略", "学习"],
+      "keywords": ["快速估算", "大概多少", "粗略计算", "数量级", "拍个大概", "市场规模多大", "需要多少人", "够不够用"],
+      "prompt_template": "用费米估算方法估算{question}：将问题逐层拆解为可估算的子问题，对每个子问题给出合理假设和计算，最终汇总得到数量级可信的估算结果，并标注主要不确定性来源。",
+      "popularity": "medium",
+      "related": ["first-principles", "decision-tree", "bayesian-thinking"]
+    },
+    {
+      "id": "system-dynamics",
+      "name": "系统动力学",
+      "name_en": "System Dynamics",
+      "core_idea": "用存量、流量和反馈关系建模系统随时间的行为变化",
+      "scenarios": ["分析", "策略", "学习"],
+      "keywords": ["系统思考", "相互影响", "动态变化", "连锁反应", "根本原因", "牵一发动全身", "恶性循环", "良性循环"],
+      "prompt_template": "用系统动力学分析{topic}：识别系统中的关键存量与流量，画出因果回路图，标注正反馈和负反馈回路，找出系统的杠杆点，预测系统的长期行为趋势。",
+      "popularity": "medium",
+      "related": ["feedback-loop", "first-principles", "decision-tree"]
+    },
+    {
+      "id": "feedback-loop",
+      "name": "反馈回路",
+      "name_en": "Feedback Loop",
+      "core_idea": "正反馈放大变化，负反馈稳定系统，识别回路可干预行为",
+      "scenarios": ["分析", "策略", "学习"],
+      "keywords": ["越做越好", "恶性循环", "飞轮效应", "马太效应", "正反馈", "自我强化", "刹车机制", "越滚越大"],
+      "prompt_template": "分析{topic}中的反馈回路：找出存在的正反馈回路（自我强化/放大）和负反馈回路（自我调节/稳定），说明它们如何共同影响系统行为，并给出干预建议。",
+      "popularity": "medium",
+      "related": ["system-dynamics", "pdca", "pareto"]
+    },
+    {
+      "id": "prospect-theory",
+      "name": "前景理论",
+      "name_en": "Prospect Theory",
+      "core_idea": "人对损失的敏感度远高于等量收益，决策依赖参考点",
+      "scenarios": ["分析", "策略", "沟通"],
+      "keywords": ["损失厌恶", "用户不愿意换", "为什么不敢尝试", "沉没成本", "怕亏", "舍不得", "参考点", "决策偏差"],
+      "prompt_template": "用前景理论分析{decision_or_behavior}：找出用户的参考点是什么，分析在面对收益和面对损失时分别呈现什么风险偏好，指出存在的认知偏差，给出如何利用或纠正这种偏差的建议。",
+      "popularity": "high",
+      "related": ["bayesian-thinking", "cost-benefit", "decision-tree"]
+    },
+    {
+      "id": "bayesian-thinking",
+      "name": "贝叶斯思维",
+      "name_en": "Bayesian Thinking",
+      "core_idea": "根据新证据不断更新对事件概率的判断",
+      "scenarios": ["分析", "学习", "策略"],
+      "keywords": ["概率更新", "先验概率", "条件概率", "有多大可能", "新信息怎么改变判断", "更新认知", "不确定", "置信度"],
+      "prompt_template": "用贝叶斯思维分析{question_or_decision}：设定先验概率，识别可获得的新证据，计算后验概率，展示随着新信息到来判断如何逐步更新，给出最终的决策建议。",
+      "popularity": "medium",
+      "related": ["prospect-theory", "fermi-estimation", "decision-tree"]
+    },
+    {
+      "id": "decision-tree",
+      "name": "决策树",
+      "name_en": "Decision Tree",
+      "core_idea": "将复杂决策拆解为分支路径，可视化每个选择的后果",
+      "scenarios": ["分析", "策略", "学习"],
+      "keywords": ["怎么选", "选择困难", "方案对比", "分支决策", "利弊分析", "如果选A会怎样", "哪个方案好", "决策路径"],
+      "prompt_template": "为{decision}构建决策树：列出所有可选方案，每个方案的关键不确定因素及其概率，各分支的预期结果和收益，计算期望值，推荐最优决策路径。",
+      "popularity": "high",
+      "related": ["cost-benefit", "bayesian-thinking", "smart"]
+    },
+    {
+      "id": "disruptive-innovation",
+      "name": "颠覆式创新",
+      "name_en": "Disruptive Innovation",
+      "core_idea": "从低端或新市场切入，逐步向上迭代最终取代在位者",
+      "scenarios": ["策略", "分析", "创意"],
+      "keywords": ["颠覆", "弯道超车", "以小博大", "低端切入", "打败巨头", "新势力", "破坏性创新", "降维打击"],
+      "prompt_template": "用颠覆式创新理论分析{industry_or_company}：识别在位者的过度服务区间，找到低端或利基市场的切入点，描述新进入者如何从边缘逐步向上迭代、最终颠覆市场格局。",
+      "popularity": "high",
+      "related": ["blue-ocean", "diffusion-curve", "moore-crossing-chasm", "jobs-to-be-done"]
+    },
+    {
+      "id": "diffusion-curve",
+      "name": "扩散曲线",
+      "name_en": "Diffusion of Innovations / S-Curve",
+      "core_idea": "新技术按创新者到落后者五类人群逐步扩散 adoption",
+      "scenarios": ["策略", "分析", "学习"],
+      "keywords": ["早期采用者", "大众市场", "增长曲线", "为什么没人用", "怎么推广", "用户群体", "传播", "什么时候爆发"],
+      "prompt_template": "用创新扩散曲线分析{technology_or_product}的市场推广：判断当前处于扩散的哪个阶段（创新者→早期采用者→早期大众→晚期大众→落后者），识别跨越每个阶段的关键障碍，给出针对性的推广策略。",
+      "popularity": "high",
+      "related": ["moore-crossing-chasm", "disruptive-innovation", "blue-ocean"]
+    },
+    {
+      "id": "design-thinking",
+      "name": "设计思维",
+      "name_en": "Design Thinking",
+      "core_idea": "以用户为中心，通过共情-定义-构思-原型-测试五步创新",
+      "scenarios": ["创意", "策略", "沟通"],
+      "keywords": ["用户需求", "共情", "头脑风暴", "快速原型", "用户中心", "以人为本", "怎么创新", "痛点"],
+      "prompt_template": "用设计思维五步法解决{problem}：1)共情（深入了解目标用户真实需求）；2)定义（精准定义核心问题）；3)构思（发散多种创意方案）；4)原型（选择最有潜力的方案做最小原型）；5)测试（设计验证方法并迭代优化）。",
+      "popularity": "high",
+      "related": ["jobs-to-be-done", "blue-ocean", "scqa", "pdca"]
+    },
+    {
+      "id": "pyramid-principle",
+      "name": "金字塔原理",
+      "name_en": "Pyramid Principle",
+      "core_idea": "结论先行，以上统下，归类分组，逻辑递进",
+      "scenarios": ["写作", "沟通", "学习"],
+      "keywords": ["结论先行", "逻辑清晰", "汇报结构", "先说结论", "金字塔", "层次分明", "条理清楚", "说重点"],
+      "prompt_template": "用金字塔原理组织{topic}的表达结构：先给出核心结论，再展开3-5个支撑论点（MECE原则，互不遗漏），每个论点下方提供事实/数据支撑，确保逻辑层次清晰、以上统下。",
+      "popularity": "high",
+      "related": ["scqa", "six-thinking-hats", "smart"]
+    },
+    {
+      "id": "scqa",
+      "name": "SCQA 框架",
+      "name_en": "SCQA Framework",
+      "core_idea": "用情境-冲突-疑问-解答四步构建引人入胜的叙事",
+      "scenarios": ["写作", "沟通", "创意"],
+      "keywords": ["讲故事", "开头怎么写", "吸引读者", "铺垫", "引入话题", "叙事结构", "怎么开场", "让人想看下去"],
+      "prompt_template": "用 SCQA 框架为{topic}构建叙事：S（情境）- 描述读者熟悉的稳定状态；C（冲突）- 打破稳定、制造张力的事件；Q（疑问）- 冲突引发的核心问题；A（解答）- 给出你的核心观点或方案。",
+      "popularity": "high",
+      "related": ["pyramid-principle", "design-thinking", "six-thinking-hats"]
+    },
+    {
+      "id": "six-thinking-hats",
+      "name": "六顶思考帽",
+      "name_en": "Six Thinking Hats",
+      "core_idea": "六种角色视角分别思考，避免混在一起的混乱讨论",
+      "scenarios": ["分析", "创意", "沟通", "学习"],
+      "keywords": ["多角度", "换位思考", "全面考虑", "别只看一面", "反面意见", "优缺点", "头脑风暴", "讨论框架"],
+      "prompt_template": "用六顶思考帽法分析{topic}：白帽（事实和数据）→ 红帽（直觉和情感）→ 黑帽（风险和问题）→ 黄帽（价值和好处）→ 绿帽（创意和替代方案）→ 蓝帽（总结和下一步），依次给出每个视角的分析。",
+      "popularity": "high",
+      "related": ["pyramid-principle", "scqa", "swot", "decision-tree"]
+    },
+    {
+      "id": "pdca",
+      "name": "PDCA 循环",
+      "name_en": "PDCA Cycle / Deming Wheel",
+      "core_idea": "计划-执行-检查-处理四步持续改进循环",
+      "scenarios": ["策略", "学习", "沟通"],
+      "keywords": ["持续改进", "迭代优化", "复盘", "优化流程", "PDCA", "不断改善", "纠正偏差", "螺旋上升"],
+      "prompt_template": "用 PDCA 循环规划{task_or_process}的改进方案：P（计划）- 明确目标和行动方案；D（执行）- 实施计划并记录数据；C（检查）- 对比目标分析偏差；A（处理）- 固化成功经验、纠正问题，进入下一轮循环。",
+      "popularity": "high",
+      "related": ["feedback-loop", "design-thinking", "smart"]
+    },
+    {
+      "id": "smart",
+      "name": "SMART 原则",
+      "name_en": "SMART Goals",
+      "core_idea": "目标须具体、可衡量、可达成、相关、有时限",
+      "scenarios": ["策略", "沟通", "学习"],
+      "keywords": ["定目标", "目标模糊", "怎么衡量", "KPI", "不切实际", "目标管理", "考核标准", "量化"],
+      "prompt_template": "用 SMART 原则检验并优化{goal_or_objective}：S（具体）- 目标是否明确无歧义；M（可衡量）- 用什么指标判断达成；A（可达成）- 现有条件下是否现实；R（相关）- 是否与大局一致；T（有时限）- 截止时间是什么。最终输出一个优化后的 SMART 目标。",
+      "popularity": "high",
+      "related": ["pdca", "decision-tree", "pyramid-principle"]
+    },
+    {
+      "id": "pareto",
+      "name": "帕累托法则",
+      "name_en": "Pareto Principle / 80-20 Rule",
+      "core_idea": "80% 的结果来自 20% 的关键投入，抓住关键少数",
+      "scenarios": ["策略", "分析", "学习"],
+      "keywords": ["80/20", "抓重点", "关键少数", "效率最高", "优先级", "二八定律", "投入产出", "核心驱动因素"],
+      "prompt_template": "用帕累托法则分析{topic}：识别产生 80% 效果的那 20% 关键因素，列出所有影响因素并按影响力排序，建议将资源集中投入哪些高杠杆点，以及可以减少投入的低效领域。",
+      "popularity": "high",
+      "related": ["occams-razor", "bcg-matrix", "cost-benefit", "smart"]
+    },
+    {
+      "id": "moore-crossing-chasm",
+      "name": "跨越鸿沟",
+      "name_en": "Crossing the Chasm",
+      "core_idea": "从早期采用者到主流市场之间存在鸿沟需集中突破",
+      "scenarios": ["策略", "分析"],
+      "keywords": ["推广困难", "用户增长瓶颈", "小众到大众", "破圈", "市场推广", "怎么主流化", "增长卡住了", "早期用户"],
+      "prompt_template": "用「跨越鸿沟」理论分析{product}的市场策略：判断产品当前所处的用户群体阶段，识别早期采用者和早期大众之间的鸿沟，选择一个细分利基市场作为桥头堡，设计集中突破策略实现主流化。",
+      "popularity": "medium",
+      "related": ["diffusion-curve", "disruptive-innovation", "jobs-to-be-done", "blue-ocean"]
+    },
+    {
+      "id": "jobs-to-be-done",
+      "name": "JTBD 待办任务理论",
+      "name_en": "Jobs to Be Done",
+      "core_idea": "用户不是买产品，是「雇佣」产品完成某个任务",
+      "scenarios": ["策略", "分析", "创意"],
+      "keywords": ["用户想要什么", "真实需求", "雇佣产品", "为什么要用", "使用场景", "用户动机", "痛点", "需求洞察"],
+      "prompt_template": "用 JTBD 待办任务理论分析{product_or_service}：描述用户在什么情境下产生了什么「待办任务」，现有解决方案为什么不够好，如何设计一个更好地完成该任务的产品/服务方案。",
+      "popularity": "medium",
+      "related": ["design-thinking", "blue-ocean", "moore-crossing-chasm", "disruptive-innovation"]
+    },
+    {
+      "id": "ansoff-matrix",
+      "name": "安索夫矩阵",
+      "name_en": "Ansoff Matrix",
+      "core_idea": "用现有/新产品与现有/新市场组合出四种增长策略",
+      "scenarios": ["策略", "分析"],
+      "keywords": ["增长策略", "怎么增长", "新产品新市场", "市场渗透", "多元化", "业务增长", "扩张方向", "增长路径"],
+      "prompt_template": "用安索夫矩阵为{company_or_product}规划增长路径：评估四种策略——市场渗透（现有产品×现有市场）、市场开发（现有产品×新市场）、产品开发（新产品×现有市场）、多元化（新产品×新市场），分析每种策略的风险和收益，推荐优先顺序。",
+      "popularity": "high",
+      "related": ["bcg-matrix", "porter-five-forces", "blue-ocean", "cost-benefit"]
+    },
+    {
+      "id": "cost-benefit",
+      "name": "成本效益分析",
+      "name_en": "Cost-Benefit Analysis",
+      "core_idea": "量化比较方案的全部成本和全部收益做出理性决策",
+      "scenarios": ["分析", "策略"],
+      "keywords": ["划不划算", "值得吗", "投入产出比", "成本收益", "ROI", "核算", "亏不亏", "性价比"],
+      "prompt_template": "对{decision_or_project}进行成本效益分析：列出所有直接和间接成本（一次性+持续），列出所有可量化和不可量化的收益，计算净现值/ROI/回收期，分析不确定性，给出是否值得投入的结论。",
+      "popularity": "high",
+      "related": ["decision-tree", "pareto", "swot", "ansoff-matrix"]
+    }
+  ]
+}
