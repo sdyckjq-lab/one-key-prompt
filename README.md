@@ -26,7 +26,7 @@
 
 ```bash
 # Claude Code 用户
-claude mcp add-plugin https://github.com/kiro-wang/prompt-keys
+claude mcp add-plugin https://github.com/kiro-wang/one-key-prompt
 ```
 
 安装后直接在对话中使用 `/提示词炼金术` 或 `/prompt-alchemy` 即可。
