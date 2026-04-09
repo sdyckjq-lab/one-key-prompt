@@ -1,4 +1,6 @@
-# 提示词炼金术
+# one-key-prompt
+
+> 提示词炼金术：一个名字，比一万字描述更管用。
 
 > 一个名字，比一万字描述更管用。
 
@@ -29,7 +31,7 @@
 claude mcp add-plugin https://github.com/sdyckjq-lab/one-key-prompt
 ```
 
-安装后直接在对话中使用 `/提示词炼金术` 或 `/prompt-alchemy` 即可。
+安装后直接在对话中使用 `/one-key-prompt` 或 `/提示词炼金术` 即可。
 
 ## 使用方法
 
@@ -38,7 +40,7 @@ claude mcp add-plugin https://github.com/sdyckjq-lab/one-key-prompt
 直接调用命令，贴上你的提示词：
 
 ```
-/提示词炼金术
+/one-key-prompt
 ```
 
 然后输入你想优化的提示词。Skill 会自动完成三步：
