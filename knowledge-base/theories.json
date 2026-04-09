@@ -10,7 +10,14 @@
       "keywords": ["竞争分析", "行业分析", "市场格局", "对手分析", "要不要进入这个市场", "这个行业赚不赚钱", "壁垒", "议价能力"],
       "prompt_template": "用波特五力模型分析{industry}行业的竞争格局，分别评估：供应商议价能力、买方议价能力、新进入者威胁、替代品威胁、现有竞争者竞争程度，最后给出该行业的吸引力判断和进入建议。",
       "popularity": "high",
-      "related": ["swot", "blue-ocean", "bcg-matrix", "ansoff-matrix"]
+      "related": ["swot", "blue-ocean", "bcg-matrix", "ansoff-matrix"],
+      "combo_recipes": [
+        {
+          "with": "blue-ocean",
+          "effect": "先看清行业竞争压力，再找到可以避开正面竞争的价值创新空间。",
+          "prompt": "先用波特五力模型分析{行业}的竞争压力，再结合蓝海战略设计一条能避开红海厮杀的差异化路径。"
+        }
+      ]
     },
     {
       "id": "swot",
@@ -21,7 +28,14 @@
       "keywords": ["优势劣势", "机会威胁", "现状分析", "自我评估", "全面分析", "我们有什么优势", "竞品对比", "做个盘点"],
       "prompt_template": "对{topic}进行 SWOT 分析，分别列出：内部优势(S)、内部劣势(W)、外部机会(O)、外部威胁(T)，并基于交叉分析给出 SO/WO/ST/WT 四种策略建议。",
       "popularity": "high",
-      "related": ["porter-five-forces", "bcg-matrix", "cost-benefit", "pareto"]
+      "related": ["porter-five-forces", "bcg-matrix", "cost-benefit", "pareto"],
+      "combo_recipes": [
+        {
+          "with": "cost-benefit",
+          "effect": "把优势机会和劣势风险盘清后，再把每个行动方案的投入产出算明白。",
+          "prompt": "先对{主题}做优势、劣势、机会、威胁分析找出关键机会与风险，再结合成本效益分析确定最值得优先投入的方案。"
+        }
+      ]
     },
     {
       "id": "bcg-matrix",
@@ -32,7 +46,14 @@
       "keywords": ["业务组合", "资源分配", "明星业务", "现金牛", "该砍掉哪个产品", "产品线规划", "投资优先级", "哪些业务重点做"],
       "prompt_template": "用 BCG 矩阵对{company_or_product}的业务/产品线进行分类，标注每个业务的市场增长率和相对市场份额，判断其属于明星、现金牛、问题还是瘦狗，并给出资源分配建议。",
       "popularity": "high",
-      "related": ["ansoff-matrix", "porter-five-forces", "pareto", "cost-benefit"]
+      "related": ["ansoff-matrix", "porter-five-forces", "pareto", "cost-benefit"],
+      "combo_recipes": [
+        {
+          "with": "ansoff-matrix",
+          "effect": "先分清业务组合的位置，再为不同业务匹配更合适的增长方向。",
+          "prompt": "先按市场增长率和相对份额梳理{公司或产品组合}的业务位置，再结合安索夫矩阵为重点业务规划最优增长路径。"
+        }
+      ]
     },
     {
       "id": "blue-ocean",
@@ -43,7 +64,14 @@
       "keywords": ["差异化", "避开竞争", "创新市场", "蓝海", "红海", "怎么跟别人不一样", "新赛道", "找不到差异化"],
       "prompt_template": "用蓝海战略的「剔除-减少-增加-创造」四步框架，为{product_or_service}设计差异化策略，画出战略布局图，说明如何跳出红海竞争、创造新的价值曲线。",
       "popularity": "high",
-      "related": ["disruptive-innovation", "design-thinking", "jobs-to-be-done", "porter-five-forces"]
+      "related": ["disruptive-innovation", "design-thinking", "jobs-to-be-done", "porter-five-forces"],
+      "combo_recipes": [
+        {
+          "with": "jobs-to-be-done",
+          "effect": "从用户真实要完成的任务出发，更容易找到真正有价值的蓝海机会。",
+          "prompt": "先用待办任务理论理清{产品或服务}用户真正想完成的任务，再结合蓝海战略设计新的价值曲线与差异化方案。"
+        }
+      ]
     },
     {
       "id": "first-principles",
@@ -54,7 +82,14 @@
       "keywords": ["本质思考", "回归本质", "从零推导", "别类比", "底层逻辑", "最根本的原因", "到底为什么", "拆到最基本"],
       "prompt_template": "用第一性原理分析{topic}：先列出这个领域的常见假设和类比推理，逐一质疑并剥离，然后从最基本的事实/物理规律/经济原理出发，重新推导出解决方案或结论。",
       "popularity": "high",
-      "related": ["occams-razor", "system-dynamics", "fermi-estimation"]
+      "related": ["occams-razor", "system-dynamics", "fermi-estimation"],
+      "combo_recipes": [
+        {
+          "with": "fermi-estimation",
+          "effect": "先把问题拆到本质，再快速估出关键变量的数量级边界。",
+          "prompt": "先用第一性原理拆解{问题}的底层事实，再结合费米估算快速推算关键变量的大致数量级。"
+        }
+      ]
     },
     {
       "id": "occams-razor",
@@ -65,7 +100,14 @@
       "keywords": ["最简单的解释", "别想复杂了", "过度解读", "简洁解释", "哪个原因更可能", "简化", "抓重点", "别加假设"],
       "prompt_template": "针对{problem_or_phenomenon}，列出所有可能的解释/假设，然后用奥卡姆剃刀原则逐一筛除不必要的假设，留下最简洁且能充分解释的方案，并说明理由。",
       "popularity": "high",
-      "related": ["first-principles", "pareto", "bayesian-thinking"]
+      "related": ["first-principles", "pareto", "bayesian-thinking"],
+      "combo_recipes": [
+        {
+          "with": "bayesian-thinking",
+          "effect": "先用最少假设建立初步判断，再随着新证据不断修正结论。",
+          "prompt": "先用奥卡姆剃刀为{现象或问题}筛出最简解释，再结合贝叶斯思维根据新证据持续更新判断。"
+        }
+      ]
     },
     {
       "id": "fermi-estimation",
@@ -109,7 +151,14 @@
       "keywords": ["损失厌恶", "用户不愿意换", "为什么不敢尝试", "沉没成本", "怕亏", "舍不得", "参考点", "决策偏差"],
       "prompt_template": "用前景理论分析{decision_or_behavior}：找出用户的参考点是什么，分析在面对收益和面对损失时分别呈现什么风险偏好，指出存在的认知偏差，给出如何利用或纠正这种偏差的建议。",
       "popularity": "high",
-      "related": ["bayesian-thinking", "cost-benefit", "decision-tree"]
+      "related": ["bayesian-thinking", "cost-benefit", "decision-tree"],
+      "combo_recipes": [
+        {
+          "with": "decision-tree",
+          "effect": "既能看见人会被损失厌恶带偏，也能把不同选择的后果摊开来比较。",
+          "prompt": "先用前景理论识别{决策情境}里的损失厌恶和参考点，再结合决策树比较各条路径的结果与风险。"
+        }
+      ]
     },
     {
       "id": "bayesian-thinking",
@@ -131,7 +180,14 @@
       "keywords": ["怎么选", "选择困难", "方案对比", "分支决策", "利弊分析", "如果选A会怎样", "哪个方案好", "决策路径"],
       "prompt_template": "为{decision}构建决策树：列出所有可选方案，每个方案的关键不确定因素及其概率，各分支的预期结果和收益，计算期望值，推荐最优决策路径。",
       "popularity": "high",
-      "related": ["cost-benefit", "bayesian-thinking", "smart"]
+      "related": ["cost-benefit", "bayesian-thinking", "smart"],
+      "combo_recipes": [
+        {
+          "with": "cost-benefit",
+          "effect": "把每个分支的可能结果和代价收益同时摆出来，决策会更稳。",
+          "prompt": "先为{决策}画出关键分支，再结合成本效益分析计算每条路径的投入、收益和取舍。"
+        }
+      ]
     },
     {
       "id": "disruptive-innovation",
@@ -142,7 +198,14 @@
       "keywords": ["颠覆", "弯道超车", "以小博大", "低端切入", "打败巨头", "新势力", "破坏性创新", "降维打击"],
       "prompt_template": "用颠覆式创新理论分析{industry_or_company}：识别在位者的过度服务区间，找到低端或利基市场的切入点，描述新进入者如何从边缘逐步向上迭代、最终颠覆市场格局。",
       "popularity": "high",
-      "related": ["blue-ocean", "diffusion-curve", "moore-crossing-chasm", "jobs-to-be-done"]
+      "related": ["blue-ocean", "diffusion-curve", "moore-crossing-chasm", "jobs-to-be-done"],
+      "combo_recipes": [
+        {
+          "with": "jobs-to-be-done",
+          "effect": "从被忽视的用户任务切入，更容易找到颠覆式创新的起点。",
+          "prompt": "先用待办任务理论找出{行业或产品}里尚未被满足的重要任务，再结合颠覆式创新设计从边缘切入并逐步上攻的路径。"
+        }
+      ]
     },
     {
       "id": "diffusion-curve",
@@ -153,7 +216,14 @@
       "keywords": ["早期采用者", "大众市场", "增长曲线", "为什么没人用", "怎么推广", "用户群体", "传播", "什么时候爆发"],
       "prompt_template": "用创新扩散曲线分析{technology_or_product}的市场推广：判断当前处于扩散的哪个阶段（创新者→早期采用者→早期大众→晚期大众→落后者），识别跨越每个阶段的关键障碍，给出针对性的推广策略。",
       "popularity": "high",
-      "related": ["moore-crossing-chasm", "disruptive-innovation", "blue-ocean"]
+      "related": ["moore-crossing-chasm", "disruptive-innovation", "blue-ocean"],
+      "combo_recipes": [
+        {
+          "with": "moore-crossing-chasm",
+          "effect": "既能判断产品卡在扩散的哪个阶段，也能明确跨向主流市场的突破口。",
+          "prompt": "先用扩散曲线判断{产品或技术}当前所处的采用阶段，再结合跨越鸿沟理论设计进入主流市场的突破策略。"
+        }
+      ]
     },
     {
       "id": "design-thinking",
@@ -164,7 +234,14 @@
       "keywords": ["用户需求", "共情", "头脑风暴", "快速原型", "用户中心", "以人为本", "怎么创新", "痛点"],
       "prompt_template": "用设计思维五步法解决{problem}：1)共情（深入了解目标用户真实需求）；2)定义（精准定义核心问题）；3)构思（发散多种创意方案）；4)原型（选择最有潜力的方案做最小原型）；5)测试（设计验证方法并迭代优化）。",
       "popularity": "high",
-      "related": ["jobs-to-be-done", "blue-ocean", "scqa", "pdca"]
+      "related": ["jobs-to-be-done", "blue-ocean", "scqa", "pdca"],
+      "combo_recipes": [
+        {
+          "with": "jobs-to-be-done",
+          "effect": "把真实任务定义清楚后，设计思维会更容易做出被用户愿意采用的方案。",
+          "prompt": "先用待办任务理论明确{问题}背后用户真正要完成的任务，再结合设计思维生成、验证并迭代解决方案。"
+        }
+      ]
     },
     {
       "id": "pyramid-principle",
@@ -175,7 +252,14 @@
       "keywords": ["结论先行", "逻辑清晰", "汇报结构", "先说结论", "金字塔", "层次分明", "条理清楚", "说重点"],
       "prompt_template": "用金字塔原理组织{topic}的表达结构：先给出核心结论，再展开3-5个支撑论点（MECE原则，互不遗漏），每个论点下方提供事实/数据支撑，确保逻辑层次清晰、以上统下。",
       "popularity": "high",
-      "related": ["scqa", "six-thinking-hats", "smart"]
+      "related": ["scqa", "six-thinking-hats", "smart"],
+      "combo_recipes": [
+        {
+          "with": "scqa",
+          "effect": "先把冲突和问题讲出来，再把答案按结论先行的结构讲清楚。",
+          "prompt": "先用情境、冲突、疑问、解答框架为{主题}搭好情境与冲突，再结合金字塔原理把核心结论和支撑论点讲清楚。"
+        }
+      ]
     },
     {
       "id": "scqa",
@@ -186,7 +270,14 @@
       "keywords": ["讲故事", "开头怎么写", "吸引读者", "铺垫", "引入话题", "叙事结构", "怎么开场", "让人想看下去"],
       "prompt_template": "用 SCQA 框架为{topic}构建叙事：S（情境）- 描述读者熟悉的稳定状态；C（冲突）- 打破稳定、制造张力的事件；Q（疑问）- 冲突引发的核心问题；A（解答）- 给出你的核心观点或方案。",
       "popularity": "high",
-      "related": ["pyramid-principle", "design-thinking", "six-thinking-hats"]
+      "related": ["pyramid-principle", "design-thinking", "six-thinking-hats"],
+      "combo_recipes": [
+        {
+          "with": "pyramid-principle",
+          "effect": "让表达既能抓住注意力，又能在进入答案后保持清晰有序。",
+          "prompt": "先用情境、冲突、疑问、解答框架为{主题}制造叙事张力，再结合金字塔原理把解答部分组织成清楚的结论和论点。"
+        }
+      ]
     },
     {
       "id": "six-thinking-hats",
@@ -197,7 +288,14 @@
       "keywords": ["多角度", "换位思考", "全面考虑", "别只看一面", "反面意见", "优缺点", "头脑风暴", "讨论框架"],
       "prompt_template": "用六顶思考帽法分析{topic}：白帽（事实和数据）→ 红帽（直觉和情感）→ 黑帽（风险和问题）→ 黄帽（价值和好处）→ 绿帽（创意和替代方案）→ 蓝帽（总结和下一步），依次给出每个视角的分析。",
       "popularity": "high",
-      "related": ["pyramid-principle", "scqa", "swot", "decision-tree"]
+      "related": ["pyramid-principle", "scqa", "swot", "decision-tree"],
+      "combo_recipes": [
+        {
+          "with": "decision-tree",
+          "effect": "先从多个角度补齐判断，再把选项收敛成可执行的决策路径。",
+          "prompt": "先用六顶思考帽全面审视{主题}的事实、情绪、风险、价值与创意，再结合决策树选出最优行动路径。"
+        }
+      ]
     },
     {
       "id": "pdca",
@@ -208,7 +306,14 @@
       "keywords": ["持续改进", "迭代优化", "复盘", "优化流程", "PDCA", "不断改善", "纠正偏差", "螺旋上升"],
       "prompt_template": "用 PDCA 循环规划{task_or_process}的改进方案：P（计划）- 明确目标和行动方案；D（执行）- 实施计划并记录数据；C（检查）- 对比目标分析偏差；A（处理）- 固化成功经验、纠正问题，进入下一轮循环。",
       "popularity": "high",
-      "related": ["feedback-loop", "design-thinking", "smart"]
+      "related": ["feedback-loop", "design-thinking", "smart"],
+      "combo_recipes": [
+        {
+          "with": "smart",
+          "effect": "目标先定清，再用循环式复盘把执行不断拉回正轨。",
+          "prompt": "先按具体、可衡量、可达成、相关、有时限的原则把{目标}定义清楚，再结合计划、执行、检查、处理循环安排执行、检查和持续改进。"
+        }
+      ]
     },
     {
       "id": "smart",
@@ -219,7 +324,14 @@
       "keywords": ["定目标", "目标模糊", "怎么衡量", "KPI", "不切实际", "目标管理", "考核标准", "量化"],
       "prompt_template": "用 SMART 原则检验并优化{goal_or_objective}：S（具体）- 目标是否明确无歧义；M（可衡量）- 用什么指标判断达成；A（可达成）- 现有条件下是否现实；R（相关）- 是否与大局一致；T（有时限）- 截止时间是什么。最终输出一个优化后的 SMART 目标。",
       "popularity": "high",
-      "related": ["pdca", "decision-tree", "pyramid-principle"]
+      "related": ["pdca", "decision-tree", "pyramid-principle"],
+      "combo_recipes": [
+        {
+          "with": "pdca",
+          "effect": "让目标不仅清楚可衡量，还能在执行中被持续追踪和修正。",
+          "prompt": "先按具体、可衡量、可达成、相关、有时限的原则重写{目标}，再结合计划、执行、检查、处理循环制定每一轮执行、检查和修正动作。"
+        }
+      ]
     },
     {
       "id": "pareto",
@@ -230,7 +342,14 @@
       "keywords": ["80/20", "抓重点", "关键少数", "效率最高", "优先级", "二八定律", "投入产出", "核心驱动因素"],
       "prompt_template": "用帕累托法则分析{topic}：识别产生 80% 效果的那 20% 关键因素，列出所有影响因素并按影响力排序，建议将资源集中投入哪些高杠杆点，以及可以减少投入的低效领域。",
       "popularity": "high",
-      "related": ["occams-razor", "bcg-matrix", "cost-benefit", "smart"]
+      "related": ["occams-razor", "bcg-matrix", "cost-benefit", "smart"],
+      "combo_recipes": [
+        {
+          "with": "cost-benefit",
+          "effect": "先找出关键少数，再确认资源应该投在最划算的地方。",
+          "prompt": "先用帕累托法则找出{主题}里最关键的少数因素，再结合成本效益分析确定最值得集中投入的动作。"
+        }
+      ]
     },
     {
       "id": "moore-crossing-chasm",
@@ -263,7 +382,14 @@
       "keywords": ["增长策略", "怎么增长", "新产品新市场", "市场渗透", "多元化", "业务增长", "扩张方向", "增长路径"],
       "prompt_template": "用安索夫矩阵为{company_or_product}规划增长路径：评估四种策略——市场渗透（现有产品×现有市场）、市场开发（现有产品×新市场）、产品开发（新产品×现有市场）、多元化（新产品×新市场），分析每种策略的风险和收益，推荐优先顺序。",
       "popularity": "high",
-      "related": ["bcg-matrix", "porter-five-forces", "blue-ocean", "cost-benefit"]
+      "related": ["bcg-matrix", "porter-five-forces", "blue-ocean", "cost-benefit"],
+      "combo_recipes": [
+        {
+          "with": "bcg-matrix",
+          "effect": "先看清各业务所处位置，再为不同业务选择更匹配的增长策略。",
+          "prompt": "先按市场增长率和相对份额梳理{公司或产品组合}的业务状态，再结合安索夫矩阵为重点业务选择合适的增长方向。"
+        }
+      ]
     },
     {
       "id": "cost-benefit",
@@ -274,7 +400,14 @@
       "keywords": ["划不划算", "值得吗", "投入产出比", "成本收益", "ROI", "核算", "亏不亏", "性价比"],
       "prompt_template": "对{decision_or_project}进行成本效益分析：列出所有直接和间接成本（一次性+持续），列出所有可量化和不可量化的收益，计算净现值/ROI/回收期，分析不确定性，给出是否值得投入的结论。",
       "popularity": "high",
-      "related": ["decision-tree", "pareto", "swot", "ansoff-matrix"]
+      "related": ["decision-tree", "pareto", "swot", "ansoff-matrix"],
+      "combo_recipes": [
+        {
+          "with": "decision-tree",
+          "effect": "在多个方案之间把账算清，再顺着分支看清长期后果。",
+          "prompt": "先为{项目或决策}建立决策树列出主要分支，再结合成本效益分析比较每条路径是否值得投入。"
+        }
+      ]
     }
   ]
 }

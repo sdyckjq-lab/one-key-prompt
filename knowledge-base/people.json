@@ -10,7 +10,8 @@
       "keywords": ["塔勒布", "反脆弱", "黑天鹅", "不确定性", "随机", "不对称", "风险", "杠铃策略", " Skin in the Game"],
       "prompt_template": "以塔勒布的思维分析{topic}：哪些不确定性因素被低估了？如何构建反脆弱性？当前策略中有什么是脆弱的？",
       "popularity": "high",
-      "related": ["kahneman", "munger", "thiel"]
+      "related": ["kahneman", "munger", "thiel"],
+      "combo_recipes": [{"with": "kahneman", "effect": "用反脆弱框架识别脆弱点，再用认知偏误分析判断过程中可能的思维陷阱", "prompt": "用塔勒布的反脆弱框架和卡尼曼的认知偏误理论，分析{topic}中的脆弱点和可能的判断偏误"}]
     },
     {
       "id": "munger",
@@ -21,7 +22,8 @@
       "keywords": ["芒格", "查理芒格", "多元思维", "思维模型", "逆向思考", "反过来想", "能力圈", "穷查理宝典", "普世智慧"],
       "prompt_template": "用查理·芒格的多元思维模型分析{topic}：先反过来想，怎么一定会失败？从心理学、经济学、数学等角度分别能得出什么结论？",
       "popularity": "high",
-      "related": ["taleb", "kahneman", "drucker"]
+      "related": ["taleb", "kahneman", "drucker"],
+      "combo_recipes": [{"with": "kahneman", "effect": "先用多元思维模型搭建分析框架，再用认知偏误校准判断，减少聪明人常见的系统性失误", "prompt": "用查理·芒格的多元思维模型和卡尼曼的认知偏误理论，分析{topic}该从哪些角度切入，以及最容易出现哪些判断偏差"}]
     },
     {
       "id": "kahneman",
@@ -32,7 +34,8 @@
       "keywords": ["卡尼曼", "快思慢想", "认知偏误", "系统1系统2", "锚定效应", "损失厌恶", "确认偏误", "可得性偏差", "前景理论"],
       "prompt_template": "用卡尼曼的快思慢想框架分析{topic}：人们在做这个判断时，系统1可能产生哪些直觉偏误？如何启动系统2来纠正？",
       "popularity": "high",
-      "related": ["munger", "taleb", "pinker"]
+      "related": ["munger", "taleb", "pinker"],
+      "combo_recipes": [{"with": "taleb", "effect": "先识别决策中的直觉偏误，再评估这些偏误在不确定环境下会放大哪些风险和脆弱性", "prompt": "用卡尼曼的认知偏误理论和塔勒布的反脆弱框架，分析{topic}中容易出现的误判，以及这些误判会带来哪些脆弱风险"}]
     },
     {
       "id": "drucker",
@@ -43,7 +46,8 @@
       "keywords": ["德鲁克", "管理学", "目标管理", "MBO", "知识工作者", "要事优先", "卓有成效", "自我管理", "反馈分析"],
       "prompt_template": "以德鲁克的管理思想审视{topic}：目标是否清晰可衡量？谁是这个问题的知识工作者？如何做到要事优先？",
       "popularity": "high",
-      "related": ["munger", "christensen", "jobs"]
+      "related": ["munger", "christensen", "jobs"],
+      "combo_recipes": [{"with": "christensen", "effect": "把管理目标和资源配置拉回用户真实任务，再判断组织会不会因此错过新的增长机会", "prompt": "用德鲁克的管理思想和克里斯坦森的颠覆式创新理论，分析{topic}该如何设定重点目标、配置资源，并避免被新机会边缘化"}]
     },
     {
       "id": "christensen",
@@ -54,7 +58,8 @@
       "keywords": ["克里斯坦森", "颠覆式创新", "破坏性创新", "创新者窘境", " Jobs to be Done", "低端颠覆", "持续性创新", "价值网络"],
       "prompt_template": "用克里斯坦森的颠覆式创新理论分析{topic}：是否存在低端被忽视的市场？现有玩家的价值网络如何阻碍了创新？Jobs to be Done 是什么？",
       "popularity": "high",
-      "related": ["drucker", "thiel", "graham"]
+      "related": ["drucker", "thiel", "graham"],
+      "combo_recipes": [{"with": "graham", "effect": "先确认用户真正要完成的任务，再筛出最值得切入的被忽视需求，把颠覆机会落到可做的产品上", "prompt": "用克里斯坦森的颠覆式创新理论和保罗·格雷厄姆的创业哲学，分析{topic}里被忽视的用户任务、切入口和最该先做的需求"}]
     },
     {
       "id": "jung",
@@ -76,7 +81,8 @@
       "keywords": ["阿德勒", "目的论", "被讨厌的勇气", "自卑与超越", "课题分离", "自卑感", "优越情结", "共同体感觉", "生活风格"],
       "prompt_template": "用阿德勒的目的论视角分析{topic}：这不是过去造成的，而是为了什么目的？哪些是自己的课题，哪些是他人的课题？",
       "popularity": "high",
-      "related": ["jung", "maslow", "carnegie"]
+      "related": ["jung", "maslow", "carnegie"],
+      "combo_recipes": [{"with": "carnegie", "effect": "先看行为背后的目的和课题边界，再用真诚理解对方需求的方式推进沟通与合作", "prompt": "用阿德勒的目的论和卡内基的人际沟通原则，分析{topic}中各方真正的目的、课题边界，以及更有效的沟通方式"}]
     },
     {
       "id": "maslow",
@@ -87,7 +93,8 @@
       "keywords": ["马斯洛", "需求层次", "自我实现", "金字塔", "生理需求", "安全需求", "归属感", "尊重需求", "高峰体验"],
       "prompt_template": "用马斯洛需求层次理论分析{topic}：目标受众当前最迫切的需求在哪个层级？如何从低层需求出发设计满足路径？",
       "popularity": "high",
-      "related": ["adler", "jung", "carnegie"]
+      "related": ["adler", "jung", "carnegie"],
+      "combo_recipes": [{"with": "carnegie", "effect": "先判断对方当前最强烈的需求层级，再用让对方感到被理解的表达方式提高合作意愿", "prompt": "用马斯洛的需求层次理论和卡内基的人际沟通原则，分析{topic}中目标对象最在意的需求，以及该如何表达更容易达成合作"}]
     },
     {
       "id": "murakami",
@@ -98,7 +105,8 @@
       "keywords": ["村上春树", "村上", "隐喻", "孤独感", "日常超现实", "疏离", "爵士乐", "跑步", "小确幸"],
       "prompt_template": "以村上春树的叙事风格改写{topic}：用日常场景中微妙的疏离感来传达情绪，加入一个超现实的隐喻，节奏克制而有余韵。",
       "popularity": "high",
-      "related": ["higashino", "jung", "gladwell"]
+      "related": ["higashino", "jung", "gladwell"],
+      "combo_recipes": [{"with": "jung", "effect": "把日常疏离感写得可感，再用原型和潜意识意象让文本多一层深层含义", "prompt": "用村上春树的叙事气质和荣格的原型理论，重写{topic}的氛围、象征意象和人物内在心理"}]
     },
     {
       "id": "higashino",
@@ -109,7 +117,8 @@
       "keywords": ["东野圭吾", "推理", "悬念", "反转", "诡计", "人性", "白夜行", "嫌疑人X", "解忧杂货店"],
       "prompt_template": "以东野圭吾的推理叙事手法处理{topic}：在开头埋下一个看似无关的伏笔，中段制造认知误导，结尾揭示一个既意外又在情理之中的真相。",
       "popularity": "high",
-      "related": ["murakami", "sunzi", "aristotle"]
+      "related": ["murakami", "sunzi", "aristotle"],
+      "combo_recipes": [{"with": "aristotle", "effect": "让叙事伏笔和论证链条同时成立，既能制造误导，也能让结局在逻辑上站得住", "prompt": "用东野圭吾的推理叙事手法和亚里士多德的论证结构，设计{topic}的悬念铺陈、误导路径和最终揭示"}]
     },
     {
       "id": "pinker",
@@ -153,7 +162,8 @@
       "keywords": ["孙子", "孙子兵法", "兵法", "知己知彼", "不战而屈人之兵", "虚实", "势", "以正合以奇胜", "庙算"],
       "prompt_template": "用孙子兵法思维制定{topic}的策略：先做庙算评估胜负条件，找出对手的虚实，以正合以奇胜，如何做到不战而屈人之兵？",
       "popularity": "high",
-      "related": ["thiel", "munger", "aristotle"]
+      "related": ["thiel", "munger", "aristotle"],
+      "combo_recipes": [{"with": "thiel", "effect": "用兵法判断竞争态势和攻守路径，再用从零到一视角找到避开正面竞争的独特位置", "prompt": "用孙子的兵法思维和彼得·蒂尔的从零到一理论，分析{topic}的竞争格局、突破口和最有机会建立优势的位置"}]
     },
     {
       "id": "feynman",
@@ -164,7 +174,8 @@
       "keywords": ["费曼", "费曼学习法", "费曼技巧", "诺贝尔", "物理学", "讲清楚", "简单解释", "类比", "好奇心"],
       "prompt_template": "用费曼学习法拆解{topic}：假设你要给一个 12 岁的孩子解释这个概念，你会怎么说？哪里卡壳了，就是你还不够理解的地方。",
       "popularity": "high",
-      "related": ["pinker", "kahneman", "adler"]
+      "related": ["pinker", "kahneman", "adler"],
+      "combo_recipes": [{"with": "pinker", "effect": "先用费曼法找出自己没真正懂的地方，再按读者的认知负担重写成清晰易懂的表达", "prompt": "用费曼学习法和平克的清晰写作原则，解释{topic}时先找出理解盲点，再把内容改写成读者一看就明白的版本"}]
     },
     {
       "id": "jobs",
@@ -175,7 +186,8 @@
       "keywords": ["乔布斯", "极简", "苹果", "用户体验", "设计", "少即是多", "Stay Hungry", "产品", "现实扭曲力场"],
       "prompt_template": "以乔布斯的产品哲学审视{topic}：如果只能保留一个核心功能，是哪个？每个多余的东西能不能砍掉？用户拿起来的第一感受是什么？",
       "popularity": "high",
-      "related": ["drucker", "thiel", "graham"]
+      "related": ["drucker", "thiel", "graham"],
+      "combo_recipes": [{"with": "graham", "effect": "先确认用户真的需要什么，再把产品收敛到最能打动人的核心体验，避免功能堆积", "prompt": "用乔布斯的产品哲学和保罗·格雷厄姆的创业思路，分析{topic}里用户真正需要的东西，以及应该保留到极致的核心体验"}]
     },
     {
       "id": "graham",
@@ -186,7 +198,8 @@
       "keywords": ["保罗格雷厄姆", "PG", " Y Combinator", "创业", "黑客与画家", " Make something people want", "写作", " Lisp", "独立思考"],
       "prompt_template": "用保罗·格雷厄姆的创业哲学分析{topic}：这是不是人们真正需要的东西？如果不是，离人们最近的需求是什么？用写作的方式把这个想法重新理一遍。",
       "popularity": "high",
-      "related": ["thiel", "christensen", "raymond"]
+      "related": ["thiel", "christensen", "raymond"],
+      "combo_recipes": [{"with": "thiel", "effect": "先确认是不是刚需，再判断这件事能否形成独特优势，避免把产品做成普通功能拼盘", "prompt": "用保罗·格雷厄姆的创业哲学和彼得·蒂尔的从零到一理论，分析{topic}是否是真需求，以及哪里有机会做出独特优势"}]
     },
     {
       "id": "thiel",
@@ -197,7 +210,8 @@
       "keywords": ["蒂尔", "彼得蒂尔", "从零到一", " Zero to One", "垄断", "逆向思考", "秘密", " PayPal 黑手党", "竞争是留给失败者的"],
       "prompt_template": "用蒂尔的从零到一思维分析{topic}：什么是别人都不认同但你认为是真的秘密？在哪个维度上可以建立垄断？从 0 到 1 和从 1 到 N 的区别在哪？",
       "popularity": "high",
-      "related": ["graham", "christensen", "munger"]
+      "related": ["graham", "christensen", "munger"],
+      "combo_recipes": [{"with": "christensen", "effect": "先识别被忽视的市场切口，再设计能滚出垄断优势的创新路径，而不是陷入同质竞争", "prompt": "用彼得·蒂尔的从零到一理论和克里斯坦森的颠覆式创新框架，分析{topic}该从哪个被忽视的切口进入，并建立独特优势"}]
     },
     {
       "id": "seneca",
@@ -241,7 +255,8 @@
       "keywords": ["卡内基", "人性的弱点", "人际关系", "沟通", "影响力", "真诚", "赞美", "倾听", " Win Friends"],
       "prompt_template": "用卡内基的人际沟通原则分析{topic}：对方的需求和动机是什么？如何先让对方感到被理解和重要，再表达你的观点？",
       "popularity": "high",
-      "related": ["adler", "maslow", "demosthenes"]
+      "related": ["adler", "maslow", "demosthenes"],
+      "combo_recipes": [{"with": "maslow", "effect": "先识别对方真正缺的是什么，再用让人感到被尊重和被理解的方式建立合作与说服力", "prompt": "用卡内基的人际沟通原则和马斯洛的需求层次理论，分析{topic}中对方最在意的需求，以及怎样表达更容易赢得合作"}]
     },
     {
       "id": "kawakami",
@@ -274,7 +289,8 @@
       "keywords": ["格拉德威尔", "引爆点", "异类", " Blink", "一万小时", " tipping point", "流行", "叙事", "故事化"],
       "prompt_template": "用格拉德威尔的叙事方法处理{topic}：先讲一个出人意料的小故事，然后从中引出反直觉的洞见。找出其中的个别人物、附着力因素和环境威力。",
       "popularity": "high",
-      "related": ["pinker", "mcluhan", "murakami"]
+      "related": ["pinker", "mcluhan", "murakami"],
+      "combo_recipes": [{"with": "mcluhan", "effect": "把洞见讲成更容易传播的故事，再选择最能放大记忆点和扩散力的媒介形式", "prompt": "用格拉德威尔的故事化表达和麦克卢汉的媒介理论，设计{topic}该如何讲述、通过什么媒介传播，以及怎样更容易被扩散"}]
     }
   ]
 }
